@@ -17,16 +17,9 @@ public class MainController {
     @Autowired
     private MessageRepository messageRepository;
 
-    @GetMapping("/start")
-    public String greeting(@RequestParam(name = "name", required = false, defaultValue = "World") String name,
-                           Map<String, Object> model) {
-        model.put("name", name);
-        return "start";
-    }
+    @GetMapping("/")
+    public String mycontroller(Map<String, Object> model) {
 
-    @GetMapping("/mycontroller")
-    public String mycontroller(@RequestParam(name = "name", required = false, defaultValue = "World") String name, Model model) {
-        model.addAttribute("name", name);
         return "mycontroller";
     }
 
@@ -60,5 +53,12 @@ public class MainController {
         model.put("messages", messages);
         return "main";
     }
+
+/*    @GetMapping("/start")
+    public String greeting(@RequestParam(name = "name", required = false, defaultValue = "World") String name,
+                           Map<String, Object> model) {
+        model.put("name", name);
+        return "start";
+    }*/
 
 }

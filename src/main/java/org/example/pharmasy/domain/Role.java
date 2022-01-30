@@ -1,2 +1,5 @@
-package org.example.pharmasy.domain;public enum Role {
+package org.example.pharmasy.domain;
+
+public enum Role {
+    USER;
 }

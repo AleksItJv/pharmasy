@@ -1,4 +1,4 @@
-package org.example.pharmasy.secure;
+package org.example.pharmasy.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
