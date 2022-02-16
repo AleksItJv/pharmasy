@@ -18,10 +18,10 @@ public class MyController {
     String addNewMessage (@RequestParam String text
             , @RequestParam String tag) {
 
-        Message n = new Message();
-        n.setText(text);
-        n.setTag(tag);
-        messageRepository.save(n);
+        Message message = new Message();
+        message.setText(text);
+        message.setTag(tag);
+        messageRepository.save(message);
         return "Saved";
     }
 

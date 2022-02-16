@@ -52,4 +52,12 @@ public class Message {
     public void setTag(String tag) {
         this.tag = tag;
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }
